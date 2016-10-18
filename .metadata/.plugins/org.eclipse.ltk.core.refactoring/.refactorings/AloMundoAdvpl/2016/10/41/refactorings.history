@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<session version="1.0">
+<refactoring comment="Renomear recurso &quot;AloMundoAdvpl/resources&quot; a &quot;Fontes&quot;" description="Renomear recurso &quot;resources&quot;" flags="7" id="org.eclipse.ltk.core.refactoring.rename.resource" input="resources" name="Fontes" stamp="1475690196292" updateReferences="true"/>
+</session>

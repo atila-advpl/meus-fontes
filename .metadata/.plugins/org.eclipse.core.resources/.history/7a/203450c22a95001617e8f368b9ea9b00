@@ -1,0 +1,29 @@
+#include 'protheus.ch'
+#include 'parmtype.ch'
+
+#define ENTER Chr(13)+Chr(13)
+
+user function test_advpl_function()
+
+	Local aArea := GetArea()
+
+	Local aLista := {1, 5, 2, 4, 3, 6, 12}
+	Local nCnt
+	Local nCnt2
+	Local nMin
+	Local nMenor
+	Local tam := Len(aLista)
+
+	Alert(tam)
+	For nCnt := 1 to tam
+		For nCnt2 := nCnt to tam
+			//Alert(aLista[nCnt])
+		Next nCnt2
+	Next nCnt
+
+	For nCnt := 1 to Len(aLista)
+		Alert(aLista[nCnt])
+	Next nCnt
+
+	RestArea(aArea)
+return
