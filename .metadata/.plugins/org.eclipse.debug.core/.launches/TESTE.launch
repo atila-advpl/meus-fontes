@@ -2,8 +2,8 @@
 <launchConfiguration type="AdvPL.launchType">
 <stringAttribute key="ADVPLParameters" value="-m"/>
 <booleanAttribute key="ADVPLProfile" value="false"/>
-<stringAttribute key="ADVPLRemoteDirectory" value="C:\TOTVS 11\Microsiga\Protheus\bin\smartclient\Smartclient.exe"/>
-<stringAttribute key="ADVPLStartProgram" value="u_test_advpl_function()"/>
+<stringAttribute key="ADVPLRemoteDirectory" value="C:\TOTVS 12\Microsiga\Protheus\bin\smartclient\smartclient.exe"/>
+<stringAttribute key="ADVPLStartProgram" value="sigacom"/>
 <stringAttribute key="br.com.totvs.tds.debug.launche.SMARTCLIENT_ARG_LANGUAGE" value=""/>
 <booleanAttribute key="br.com.totvs.tds.debug.launcher.DEBUG_ARG_STOP_FIRST_LINE" value="false"/>
 <booleanAttribute key="br.com.totvs.tds.debug.launcher.SMARTCLIENT_ARG_ACCESSIBILITY" value="false"/>
@@ -12,5 +12,6 @@
 <booleanAttribute key="br.com.totvs.tds.debug.launcher.SMARTCLIENT_ARG_SPLASH" value="false"/>
 <listAttribute key="br.com.totvs.tds.debug.launcher.SMARTCLIENT_LIST">
 <listEntry value="C:\TOTVS 11\Microsiga\Protheus\bin\smartclient\Smartclient.exe"/>
+<listEntry value="C:\TOTVS 12\Microsiga\Protheus\bin\smartclient\smartclient.exe"/>
 </listAttribute>
 </launchConfiguration>

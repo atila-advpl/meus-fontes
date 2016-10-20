@@ -1,0 +1,46 @@
+#include 'protheus.ch'
+#include 'parmtype.ch'
+#INCLUDE "rwmake.ch"   
+
+#DEFINE ENTER chr(13) + chr(13)
+
+//U_TestCadTitular()
+user function TestCadTitular()
+
+Local aArea := GetArea()
+
+ //AxCadastro("SZZ", "TITULARES")  
+Private cCadastro := "CADASTRO DE TITULAR" 
+
+
+aCores :=   {{'EMPTY(SZ4->Z4_STATUS)', 'ENABLE'},;        // A SER ATENDIDO 
+             {'Z4_STATUS =="Q"' , 'BR_VERMELHO' },;        // QUENTE
+             {'Z4_STATUS =="S"' , 'BR_PINK'      },;        // SEM PREVISAO
+             {'Z4_STATUS =="M"' , 'BR_CINZA'     },;        // MORNO
+             {'Z4_STATUS =="F"' , 'BR_BRANCO'    },;        // FRIO
+             {'Z4_STATUS =="E"' , 'BR_MARRON'    },;        // PRODUTO ERRADO
+             {'Z4_STATUS =="H"' , 'DISABLE   '   },;        // FECHADO
+             {'Z4_STATUS =="D"' , 'BR_PRETO'     }}
+
+
+//зддддддддддддддддддддддддддддддддддддддддддддддддддддддддддддддддддддд©
+//Ё Monta um aRotina proprio                                           Ё
+//юддддддддддддддддддддддддддддддддддддддддддддддддддддддддддддддддддддды
+
+Private aRotina := { {"Pesquisar","AxPesqui",0,1 } ,;
+                     {"Visualizar","AxVisual",0,2} ,;
+                     {"Incluir","AxInclui",0,3   } ,;
+                     {"Alterar","AxAltera",0,4   } ,;
+                     {"Legenda","U_Leadleg()",0,5},;
+                     {"Excluir","AxDeleta",0,6   }}
+
+Private cDelFunc := ".T." // Validacao para a exclusao. Pode-se utilizar ExecBlock
+Private cString := "SZZ"
+
+dbSelectArea("SZZ")
+dbSetOrder(1)   
+mBrowse( 6,1,22,75,cString,,,,,6, aCores)
+
+RestArea(aArea)
+
+Return

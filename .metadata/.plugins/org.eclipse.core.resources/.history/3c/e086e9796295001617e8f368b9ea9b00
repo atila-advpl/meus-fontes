@@ -1,0 +1,13 @@
+#include 'protheus.ch'
+#include 'parmtype.ch'
+
+
+#DEFINE ENTER chr(13) + chr(13)
+
+user function TestCadTitular()
+Local aArea := GetArea()	
+
+
+
+RestArea(aArea)
+return

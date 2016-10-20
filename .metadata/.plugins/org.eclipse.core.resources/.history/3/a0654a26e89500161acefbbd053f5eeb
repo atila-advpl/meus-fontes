@@ -1,0 +1,12 @@
+#include 'protheus.ch'
+#include 'parmtype.ch'
+
+
+#DEFINE ENTER chr(13) + chr(13)
+
+//U_TestCadTitular()
+user function TestCadTitular()
+ 
+AxCadastro("ZZT", "TITULARES")  
+
+Return
